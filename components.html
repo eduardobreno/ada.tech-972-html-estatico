@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Componentes</title>
+    <style>
+        .inputEmoji {
+            position: relative;
+            display: inline;
+        }
+
+        .inputEmoji>input {
+            padding-right: 25px;
+        }
+
+        .inputEmoji>span {
+            position: absolute;
+            right: 4px;
+        }
+
+        .campoTexto {
+            padding-right: 25px;
+        }
+
+        .emoji {
+            position: absolute;
+            right: 4px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="inputEmoji">
+        <input type="text" /> <span>🤡</span>
+    </div>
+    <br />
+    <br />
+    <div class="inputEmoji">
+        <input class="campoTexto" type="text" /> <span class="emoji">🤡</span>
+    </div>
+</body>
+
+</html>
