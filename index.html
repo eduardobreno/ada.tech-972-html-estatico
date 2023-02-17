@@ -5,13 +5,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Meu site é legal" />
     <title>Quadro de informações</title>
     <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
         ul {
             list-style: none;
             padding: 0;
             display: flex;
             gap: 10px;
+        }
+
+        .imageGatinho {
+            width: 50%;
         }
     </style>
 </head>
@@ -30,9 +39,99 @@
         </nav>
     </header>
     <main>
+        <h1>Como usar HTML?</h1>
+        <ol>
+            <li><a href="#introducao">Introdução</a></li>
+            <li><a href="#historia">História</a></li>
+            <li><a href="#tags">Tags básicas</a></li>
+        </ol>
+        <aside>
+            <figure>
+                <img src="images/ada.jpeg" alt="logo tipo da ada.tech" />
+                <figcaption>Conteúdo patrocinado pela Ada.tech</figcaption>
+            </figure>
+        </aside>
+        <h2 id="introducao">
+            <a href="#introducao">Introdução</a>
+        </h2>
 
-        Texto aletório
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc purus turpis, convallis eu condimentum nec,
+            feugiat a mi. Duis vitae vulputate massa. Duis quis convallis ex. Curabitur imperdiet est sit amet dolor
+            varius hendrerit. Nullam porta, justo ut commodo maximus, dui ligula laoreet ex, a viverra orci mauris
+            eu
+            lorem. Vestibulum fringilla mollis leo lacinia mattis. Praesent nec nibh lectus. Vivamus accumsan, metus
+            quis faucibus fringilla, nunc turpis ornare diam, quis tempus urna leo ut lacus. Suspendisse potenti.
+            Phasellus consectetur et nibh eu finibus. Sed nibh ligula, dapibus quis erat id, efficitur luctus augue.
+            Phasellus ullamcorper nulla neque, ac congue sem feugiat non. In felis ex, pellentesque ac quam sit
+            amet,
+            volutpat commodo magna.</p>
+
+        </section>
+        <section>
+            <article>
+                <h2 id="historia">
+                    <a href="#historia">História</a>
+                </h2>
+                <p>Donec arcu nulla, aliquet in pulvinar ac, fermentum eget est. Cras non sodales magna, in congue leo.
+                    Fusce
+                    vitae enim ut eros efficitur imperdiet quis a nulla. Fusce ac placerat risus. Nulla non odio in
+                    magna
+                    venenatis scelerisque. Nunc tincidunt purus vel enim imperdiet, vitae facilisis nunc luctus. Sed
+                    blandit
+                    odio a lacus vehicula rutrum. Suspendisse ac lacus ac arcu ultrices ultrices. Nulla ullamcorper,
+                    libero
+                    luctus elementum dapibus, risus justo porta magna, ut euismod quam turpis quis nisi. Suspendisse ex
+                    magna,
+                    rhoncus a consectetur vitae, semper et urna. Nulla malesuada, justo sed consectetur luctus, elit
+                    eros
+                    fringilla libero, eu vulputate sapien est sed diam. Aliquam dolor neque, suscipit sit amet tristique
+                    a,
+                    facilisis quis nunc. Nulla malesuada lobortis felis sed fringilla. Pellentesque quam odio, suscipit
+                    congue
+                    lacinia vitae, dapibus nec dolor. Nullam est nunc, pellentesque ac nibh nec, euismod bibendum sem.
+                </p>
+                <figure>
+                    <img class="imageGatinho" src="images/gatinhos.jpeg" alt="um filhote de gato" />
+                    <figcaption>Um gatinho</figcaption>
+                </figure>
+            </article>
+        </section>
+        <section>
+            <h2 id="tags">
+                <a href="#tags">Tags básicas</a>
+            </h2>
+            <p>Morbi tortor sapien, sodales ut viverra vitae, ultricies hendrerit est. Quisque aliquet purus quis ipsum
+                tincidunt vestibulum id ac purus. Vestibulum at consequat nisl, ut consectetur justo. In hac habitasse
+                platea dictumst. Curabitur at ultricies velit. Fusce egestas porta viverra. Maecenas lectus felis,
+                gravida
+                fringilla turpis at, venenatis tincidunt magna.</p>
+
+            <p>Praesent massa ligula, varius quis felis ac, auctor faucibus ipsum. Aliquam vitae justo eu ipsum
+                convallis
+                lacinia vel sed arcu. Suspendisse neque odio, sagittis at ullamcorper quis, ultricies sed arcu. Sed ac
+                ex
+                vitae magna congue elementum id a nunc. Nulla hendrerit odio at ante iaculis accumsan. In hac habitasse
+                platea dictumst. Donec viverra leo ut elit molestie tincidunt. Nunc auctor nunc non vestibulum dapibus.
+                Cras
+                pretium vestibulum nisi. Vestibulum sed diam at mauris vulputate suscipit. Cras iaculis, nunc a aliquet
+                egestas, leo sem sollicitudin sapien, ac egestas orci ante in massa. Sed gravida semper placerat. Nulla
+                nec
+                nibh vel neque faucibus tristique ut nec enim. Vestibulum ut viverra massa, ac pulvinar nunc. Aliquam
+                laoreet ornare tempor.</p>
+
+            <p>Sed gravida urna et interdum rhoncus. Praesent ut laoreet tortor. Orci varius natoque penatibus et magnis
+                dis
+                parturient montes, nascetur ridiculus mus. Aenean molestie libero vel nisl maximus, sit amet posuere
+                felis
+                vehicula. Donec non ex eget ligula posuere pretium. Nam nec elit enim. Ut efficitur lacus vel diam
+                auctor
+                sodales. Vivamus convallis augue a consectetur rhoncus. Nulla pellentesque at lectus sit amet consequat.
+            </p>
+        </section>
     </main>
+    <footer>
+        Copyright 2023 - Eduardo Freitas
+    </footer>
 </body>
 
 </html>

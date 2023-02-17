@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        main {
+            /* background-color: lightcoral; */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .formularioDireta {
+            align-self: flex-end;
+        }
+        p {
+            color: blue;
+        }
+
+        #maisInfo {
+            font-size: 30px;
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div>
+            <p>
+                Olá tudo bem?
+            </p>
+            <p>
+                Preencha o formulário abaixo para falar conosco!
+            </p>
+
+            <p id="maisInfo">
+                Mais informações
+            </p>
+
+            <form action="/qualquerEndereco.php" method="post">
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome" required />
+                <br>
+                <label for="dtNasc">Data de nascimento:</label>
+                <input type="date" name="dtNasc" id="dtNasc" />
+                <br>
+                Sabe programar?
+                <select name="sabeProgramar">
+                    <option></option>
+                    <option>Sim</option>
+                    <option>Não</option>
+                </select>
+                <br />
+                Escolha os animais que você gosta?
+                <select name="escolhaAnimais" multiple>
+                    <option>Gato</option>
+                    <option>Cachorro</option>
+                    <option>Arara</option>
+                    <option>Rato</option>
+                    <option>Galinha</option>
+                    <option>Cavalo</option>
+                </select>
+                <br />
+                <input type="checkbox" name="gato" /> Gato
+                <input type="checkbox" name="cachorro" /> Cachorro
+                <input type="checkbox" name="galinha" /> Galinha
+                <input type="checkbox" name="cavalo" /> Cavalo
+                <br>
+                <button>Salvar</button>
+            </form>
+        </div>
+        <div class="formularioDireta">
+            <form action="/qualquerEndereco.php" method="post">
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome" required />
+                <br>
+                <label for="dtNasc">Data de nascimento:</label>
+                <input type="date" name="dtNasc" id="dtNasc" />
+                <br>
+                Sabe programar?
+                <select name="sabeProgramar">
+                    <option></option>
+                    <option>Sim</option>
+                    <option>Não</option>
+                </select>
+                <br />
+                Escolha os animais que você gosta?
+                <select name="escolhaAnimais" multiple>
+                    <option>Gato</option>
+                    <option>Cachorro</option>
+                    <option>Arara</option>
+                    <option>Rato</option>
+                    <option>Galinha</option>
+                    <option>Cavalo</option>
+                </select>
+                <br />
+                <input type="checkbox" name="gato" /> Gato
+                <input type="checkbox" name="cachorro" /> Cachorro
+                <input type="checkbox" name="galinha" /> Galinha
+                <input type="checkbox" name="cavalo" /> Cavalo
+                <br>
+                <button>Salvar</button>
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>
