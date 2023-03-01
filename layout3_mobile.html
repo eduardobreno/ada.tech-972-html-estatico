@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>layout 3</title>
+  <style>
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+    }
+
+    p {
+      margin-top: 0;
+    }
+
+    header {
+      background-color: chocolate;
+      display: flex;
+      /* justify-content: center; */
+    }
+
+    header>img {
+      height: 100px;
+      width: 200px;
+      margin: 10px auto;
+    }
+
+    main {
+      background-color: darkgreen;
+      height: calc(100% - 160px);
+      display: flex;
+    }
+
+    article {
+      padding: 20px;
+      overflow: auto;
+    }
+
+    aside {
+      background-color: magenta;
+      min-width: 200px;
+      padding: 20px;
+    }
+
+    footer {
+      padding: 10px;
+      background-color: firebrick;
+    }
+
+    ul {
+      list-style: none;
+      margin-top: 0;
+      padding-left: 10px;
+    }
+
+    @media (max-width: 500px) {
+      main {
+        background-color: blue;
+        flex-direction: column-reverse;
+      }
+
+      aside {
+        min-height: 100px;
+        overflow: auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <img src="images/ada.jpeg" alt="LOGO" />
+  </header>
+  <main>
+    <article>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porta luctus nisi at vulputate. Quisque nec mi
+        odio. Morbi blandit metus sit amet risus aliquam imperdiet a et nibh. Ut arcu dui, scelerisque vitae justo quis,
+        pharetra vehicula sapien. Vivamus sit amet tincidunt est. Etiam condimentum viverra erat in efficitur. Nullam
+        non
+        mauris eu erat eleifend dapibus. Ut ultricies ante nunc, in ultrices risus varius eget. Quisque congue eros non
+        lacinia posuere. Mauris convallis tellus non neque pellentesque, et pretium mi bibendum. Phasellus in aliquet
+        neque. Morbi at laoreet metus.
+      </p>
+      <p>
+        Suspendisse in risus commodo, cursus mi at, condimentum diam. Nam vitae ligula ac elit blandit suscipit.
+        Suspendisse lacinia gravida ullamcorper. Maecenas vehicula purus ante, at consequat orci iaculis id. Aenean quis
+        placerat lacus, a egestas dui. Donec egestas arcu vel leo posuere, at ornare tellus pretium. Mauris dapibus
+        lectus
+        quis velit feugiat vestibulum. Aenean eu turpis sed lectus venenatis porta. Nunc justo eros, efficitur vel neque
+        et, euismod interdum tellus. Nunc aliquam varius malesuada. Sed quis pulvinar turpis, ut mattis elit.
+        Suspendisse
+        sit amet erat sapien. Nam congue nulla suscipit, pellentesque arcu pretium, ultrices est. Proin quam massa,
+        congue
+        vitae sapien eget, laoreet ultrices nisi.
+      </p>
+      <p>
+        Vestibulum ac mattis metus. Curabitur ut nunc et nibh auctor mattis nec at purus. In iaculis nibh quis velit
+        placerat, in consequat nisi euismod. Morbi vulputate purus blandit augue pellentesque, sed porta justo accumsan.
+        Nullam eget dui a libero iaculis faucibus a quis magna. Etiam sed nulla et odio pellentesque interdum. Integer
+        turpis urna, fermentum eget leo nec, rutrum ornare dui. Ut libero ipsum, gravida ac erat ac, auctor suscipit
+        nibh.
+        Maecenas accumsan erat at erat fringilla, nec consectetur neque tincidunt. Suspendisse commodo risus et
+        tincidunt
+        tincidunt. Quisque pulvinar sem sit amet tempus rhoncus. Praesent tincidunt augue a dolor pretium, finibus
+        congue
+        dolor rutrum. Vivamus sit amet dolor in risus rhoncus commodo. Aenean egestas et lorem interdum dignissim.
+        Praesent in augue turpis. Quisque in viverra sem.
+      </p>
+      <p>
+        Etiam commodo velit non odio finibus rhoncus. Praesent nulla magna, semper eu eleifend sit amet, tempor eu leo.
+        Nunc semper turpis eu quam euismod, vel dapibus diam faucibus. Praesent molestie interdum arcu, vel scelerisque
+        velit. Proin convallis faucibus pellentesque. Etiam semper lobortis dui vel commodo. Vestibulum quis nulla
+        lacinia, convallis sapien vel, mattis turpis. Vestibulum venenatis diam vel lorem tristique feugiat.
+      </p>
+      <p>
+        In ut turpis eu risus euismod bibendum quis ac felis. Quisque nulla ante, mollis in sem at, sollicitudin iaculis
+        massa. Ut et elementum ex. Duis tempor quis dui vitae scelerisque. Nulla sed fermentum metus. Interdum et
+        malesuada fames ac ante ipsum primis in faucibus. Nulla felis erat, commodo convallis dignissim sed, vestibulum
+        ac
+        justo. Nunc pulvinar nibh vel arcu pretium mollis.</p>
+    </article>
+    <aside>
+      <b>Category</b>
+      <ul>
+        <li>
+          Link
+        </li>
+        <li>
+          Link
+        </li>
+        <li>
+          Link
+        </li>
+      </ul>
+
+      <b>Category 2</b>
+      <ul>
+        <li>
+          Link
+        </li>
+        <li>
+          Link
+        </li>
+        <li>
+          Link
+        </li>
+      </ul>
+      <b>Category 3</b>
+      <ul>
+        <li>
+          Link
+        </li>
+        <li>
+          Link
+        </li>
+        <li>
+          Link
+        </li>
+      </ul>
+    </aside>
+  </main>
+
+  <footer>
+    Copyright © 2023 Ada
+  </footer>
+</body>
+
+</html>

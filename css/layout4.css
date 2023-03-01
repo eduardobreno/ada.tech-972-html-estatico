@@ -1,0 +1,41 @@
+ body {
+      background-color: beige;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    header>div {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .menuListaHorizontal {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      gap: 20px;
+    }
+
+    .menuListaVertical {
+      list-style: none;
+      padding: 0;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+    }
+
+
+    .conteudoEmColuna {
+      display: grid;
+      grid-template-columns: 200px auto 200px;
+      gap: 20px;
+    }
+
+    .conteudoEmColuna>div {
+      border: 1px solid blue;
+    }

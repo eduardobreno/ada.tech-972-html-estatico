@@ -1,137 +1,197 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Meu site é legal" />
-    <title>Quadro de informações</title>
-    <style>
-        html {
-            scroll-behavior: smooth;
-        }
+  <!-- Meta tags Obrigatórias -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        ul {
-            list-style: none;
-            padding: 0;
-            display: flex;
-            gap: 10px;
-        }
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
 
-        .imageGatinho {
-            width: 50%;
-        }
-    </style>
+  <title>Olá, mundo!</title>
 </head>
 
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li>
-                    <a href="curriculo.html">Meu currículo</a>
+<body class="m-5">
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="col-md">
+          <img src="images/ada.jpeg" class="img-fluid" />
+
+        </div>
+        <div class="col-md">
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Topic 1</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Topico 2</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Topico 3</a>
+            </li>
+          </ul>
+
+          <div class="input-group mb-3">
+            <input type="text" class="form-control">
+            <div class="input-group-append">
+              <button class="btn btn-outline-secondary" type="button" id="button-addon2">Buscar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="container">
+    <div class="row">
+      <div class="col-md">
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Section 1</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Section 2</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Section 3</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Section 4</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <main>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2">
+          <p>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample"
+              aria-expanded="false" aria-controls="collapseExample">
+              Menu de seções
+            </button>
+          </p>
+          <div class="collapse" id="collapseExample">
+            <div class="card card-body">
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Section 1</a>
                 </li>
-                <li>
-                    <a href="falecomigo.html">Fale comigo</a>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Section 2</a>
                 </li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <h1>Como usar HTML?</h1>
-        <ol>
-            <li><a href="#introducao">Introdução</a></li>
-            <li><a href="#historia">História</a></li>
-            <li><a href="#tags">Tags básicas</a></li>
-        </ol>
-        <aside>
-            <figure>
-                <img src="images/ada.jpeg" alt="logo tipo da ada.tech" />
-                <figcaption>Conteúdo patrocinado pela Ada.tech</figcaption>
-            </figure>
-        </aside>
-        <h2 id="introducao">
-            <a href="#introducao">Introdução</a>
-        </h2>
-
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc purus turpis, convallis eu condimentum nec,
-            feugiat a mi. Duis vitae vulputate massa. Duis quis convallis ex. Curabitur imperdiet est sit amet dolor
-            varius hendrerit. Nullam porta, justo ut commodo maximus, dui ligula laoreet ex, a viverra orci mauris
-            eu
-            lorem. Vestibulum fringilla mollis leo lacinia mattis. Praesent nec nibh lectus. Vivamus accumsan, metus
-            quis faucibus fringilla, nunc turpis ornare diam, quis tempus urna leo ut lacus. Suspendisse potenti.
-            Phasellus consectetur et nibh eu finibus. Sed nibh ligula, dapibus quis erat id, efficitur luctus augue.
-            Phasellus ullamcorper nulla neque, ac congue sem feugiat non. In felis ex, pellentesque ac quam sit
-            amet,
-            volutpat commodo magna.</p>
-
-        </section>
-        <section>
-            <article>
-                <h2 id="historia">
-                    <a href="#historia">História</a>
-                </h2>
-                <p>Donec arcu nulla, aliquet in pulvinar ac, fermentum eget est. Cras non sodales magna, in congue leo.
-                    Fusce
-                    vitae enim ut eros efficitur imperdiet quis a nulla. Fusce ac placerat risus. Nulla non odio in
-                    magna
-                    venenatis scelerisque. Nunc tincidunt purus vel enim imperdiet, vitae facilisis nunc luctus. Sed
-                    blandit
-                    odio a lacus vehicula rutrum. Suspendisse ac lacus ac arcu ultrices ultrices. Nulla ullamcorper,
-                    libero
-                    luctus elementum dapibus, risus justo porta magna, ut euismod quam turpis quis nisi. Suspendisse ex
-                    magna,
-                    rhoncus a consectetur vitae, semper et urna. Nulla malesuada, justo sed consectetur luctus, elit
-                    eros
-                    fringilla libero, eu vulputate sapien est sed diam. Aliquam dolor neque, suscipit sit amet tristique
-                    a,
-                    facilisis quis nunc. Nulla malesuada lobortis felis sed fringilla. Pellentesque quam odio, suscipit
-                    congue
-                    lacinia vitae, dapibus nec dolor. Nullam est nunc, pellentesque ac nibh nec, euismod bibendum sem.
-                </p>
-                <figure>
-                    <img class="imageGatinho" src="images/gatinhos.jpeg" alt="um filhote de gato" />
-                    <figcaption>Um gatinho</figcaption>
-                </figure>
-            </article>
-        </section>
-        <section>
-            <h2 id="tags">
-                <a href="#tags">Tags básicas</a>
-            </h2>
-            <p>Morbi tortor sapien, sodales ut viverra vitae, ultricies hendrerit est. Quisque aliquet purus quis ipsum
-                tincidunt vestibulum id ac purus. Vestibulum at consequat nisl, ut consectetur justo. In hac habitasse
-                platea dictumst. Curabitur at ultricies velit. Fusce egestas porta viverra. Maecenas lectus felis,
-                gravida
-                fringilla turpis at, venenatis tincidunt magna.</p>
-
-            <p>Praesent massa ligula, varius quis felis ac, auctor faucibus ipsum. Aliquam vitae justo eu ipsum
-                convallis
-                lacinia vel sed arcu. Suspendisse neque odio, sagittis at ullamcorper quis, ultricies sed arcu. Sed ac
-                ex
-                vitae magna congue elementum id a nunc. Nulla hendrerit odio at ante iaculis accumsan. In hac habitasse
-                platea dictumst. Donec viverra leo ut elit molestie tincidunt. Nunc auctor nunc non vestibulum dapibus.
-                Cras
-                pretium vestibulum nisi. Vestibulum sed diam at mauris vulputate suscipit. Cras iaculis, nunc a aliquet
-                egestas, leo sem sollicitudin sapien, ac egestas orci ante in massa. Sed gravida semper placerat. Nulla
-                nec
-                nibh vel neque faucibus tristique ut nec enim. Vestibulum ut viverra massa, ac pulvinar nunc. Aliquam
-                laoreet ornare tempor.</p>
-
-            <p>Sed gravida urna et interdum rhoncus. Praesent ut laoreet tortor. Orci varius natoque penatibus et magnis
-                dis
-                parturient montes, nascetur ridiculus mus. Aenean molestie libero vel nisl maximus, sit amet posuere
-                felis
-                vehicula. Donec non ex eget ligula posuere pretium. Nam nec elit enim. Ut efficitur lacus vel diam
-                auctor
-                sodales. Vivamus convallis augue a consectetur rhoncus. Nulla pellentesque at lectus sit amet consequat.
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Section 3</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Section 4</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Section 5</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Section 6</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Section 7</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Section 8</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-8">
+          <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100"
+                  src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22800%22%20height%3D%22400%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20400%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_186942d2882%20text%20%7B%20fill%3A%23555%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A40pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_186942d2882%22%3E%3Crect%20width%3D%22800%22%20height%3D%22400%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22234.03125%22%20y%3D%22218.3%22%3EPrimeiro%20Slide%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
+                  alt="Primeiro Slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100"
+                  src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22800%22%20height%3D%22400%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20400%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_186942d2883%20text%20%7B%20fill%3A%23444%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A40pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_186942d2883%22%3E%3Crect%20width%3D%22800%22%20height%3D%22400%22%20fill%3D%22%23666%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22226.53125%22%20y%3D%22218.3%22%3ESegundo%20Slide%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
+                  alt="Segundo Slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100"
+                  src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22800%22%20height%3D%22400%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20400%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_186942d2884%20text%20%7B%20fill%3A%23333%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A40pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_186942d2884%22%3E%3Crect%20width%3D%22800%22%20height%3D%22400%22%20fill%3D%22%23555%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22238.453125%22%20y%3D%22218.3%22%3ETerceiro%20Slide%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
+                  alt="Terceiro Slide">
+              </div>
+            </div>
+          </div>
+          <article>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore
+              magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+              commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+              pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+              id est
+              laborum.
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
+              rem
+              aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+              explicabo. Nemo
+              enim ipsam voluptatem quia voluptas sit
+              aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi
+              nesciunt.
             </p>
-        </section>
-    </main>
-    <footer>
-        Copyright 2023 - Eduardo Freitas
-    </footer>
+          </article>
+        </div>
+        <div class="col-md-2">
+          <nav>
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Section 1</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Section 2</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Section 3</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Section 4</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Section 5</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Section 6</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Section 7</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Section 8</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+
+
+  <!-- JavaScript (Opcional) -->
+  <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
